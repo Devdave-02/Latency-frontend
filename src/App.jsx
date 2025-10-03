@@ -11,7 +11,7 @@ function App() {
       body: JSON.stringify({ number: 40 }),
     });
     const data = await res.json();
-    return { id: i, timeTaken: parseFloat(data.timeTaken) }; // store number
+    return { id: i, timeTaken: data.timeTaken }; 
   };
 
   // Function to send 100 requests
